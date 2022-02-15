@@ -2,17 +2,30 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { Homepage } from './homepage/homepage';
+import {RouterModule, Routes} from "@angular/router";
+import {AdminPageComponent} from "./adminpage/adminpage";
+
+const routes: Routes =
+[
+  { path: 'home', component: Homepage },
+  { path: 'admin', component: AdminPageComponent }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    Homepage,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [Homepage]
 })
 export class AppModule { }

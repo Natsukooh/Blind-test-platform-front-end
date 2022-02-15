@@ -1,0 +1,85 @@
+#main_container
+{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teams_list
+{
+  width: 100%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.team_button
+{
+  width: 400px;
+  height: 150px;
+
+  border-radius: 15px;
+  border: 3px solid black;
+  font-size: 250%;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  font-family: "Comic Sans MS", serif;
+
+  transition-duration: 0.4s;
+}
+
+#red_button
+{
+  background-color: red;
+}
+
+#red_button:hover
+{
+  background-color: white;
+  color: red;
+}
+
+#blue_button
+{
+  background-color: blue;
+}
+
+#blue_button:hover
+{
+  background-color: white;
+  color: blue;
+}
+
+#green_button
+{
+  background-color: green;
+}
+
+#green_button:hover
+{
+  background-color: white;
+  color: green;
+}
+
+#yellow_button
+{
+  background-color: yellow;
+}
+
+#yellow_button:hover
+{
+  background-color: white;
+  color: yellow;
+}
+
+#title
+{
+  font-size: 1000%;
+  font-family: "Comic Sans MS", serif;
+}
